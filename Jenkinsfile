@@ -4,9 +4,6 @@ environment {
   Subject = "jenkinScripting"
    myvar = 100
 }
-parameters {
-  choice choise : ['UAT' , 'SIT' , 'PROD'] name: 'env'
-}
 stages {
   stage('Welcome to PAC') {
     steps {
@@ -14,6 +11,7 @@ stages {
         /* Direct Variables */
         batchno = 20
         println "my batchno is ${batchno} "
+        println "Thanks for testing the pipeline with GIT"
       }
     }
    }
